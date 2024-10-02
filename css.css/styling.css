@@ -1,0 +1,272 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bg-myNav{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-container-fluid {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)) , url(../images/hero-bg.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container-header h2{
+    margin: 0;
+    font-size: 400px;
+}
+
+.skill span pre{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color:  rgb(78, 78, 78);
+}
+
+/* About Section */
+
+.about-me .line-about{
+  border: 2px solid #09c ;
+  width: 90px;
+  margin-left: 15px;
+}
+
+/* Service Section */
+
+.services .line-services{
+  border: 3px solid #09c ;
+  width: 50px;
+  margin:auto;
+}
+
+#fa-stackk{
+    font-size: 60px;
+}
+
+#fa-stack-portfolio{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.services .card-body:hover .fa-stack{
+    background-color: #09c;
+   border-radius:100%;
+   width: 30%;
+   color: white; 
+}
+
+/* Office Section */
+
+.office-image{
+    background: linear-gradient(rgba(20, 65, 171, 0.7) ,rgba(20, 65, 171, 0.7)) , url(../images/post-3.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.i{
+    font-size: 40px;
+}
+
+/* portfolio Section */
+
+.portfolio .line-portfolio{
+    border: 3px solid #09c ;
+    width: 50px;
+    margin:auto;
+}
+
+/* Scroll Section */
+
+.scroll{
+    background: linear-gradient(rgba(43, 149, 236, 0.7) ,rgba(40, 132, 245, 0.7)) , url(../images/overlay-bg.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.scroll .carousel-indicators {
+   position:static;
+}
+
+/* Blog Section */
+
+.blog .line-blog{
+    border: 3px solid #09c ;
+    width: 50px;
+    margin:auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Send Section */
+
+.send-get-in-tech{
+    background: linear-gradient(rgba(43, 149, 236, 0.7) ,rgba(40, 132, 245, 0.7)) , url(../images/overlay-bg.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.send-message .line-send{
+    border: 2px solid #09c ;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.form .bottom{
+    text-align: center;
+    margin-left: 13rem;
+    border: 0;
+}
+
+.about-me .line-get{
+    border: 2px solid #09c ;
+    width: 100px;
+    margin-left: 20px;
+}
+
+body .arrow .fa-solid{
+    width: 200px;
+    height: 100px;
+}
+
+.portfolio .row .img-container{
+    overflow: hidden;
+}
+
+.portfolio .row img{ 
+    transition-duration: 1s;
+}
+
+.portfolio .row .img-container:hover img{
+    transform: scale(1.2); 
+}
+
+.carousel-inner img{
+    margin-left: 44%;
+}
+
+.header .container-header h2{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.footer{
+    background-color: rgba(4, 91, 196, 0.9);
+}
+
+.nav-link{
+    position: relative;
+}
+
+.navbar .container .navbar-nav .nav-item .nav-link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255) ;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    transition: 0.5s;
+}
+
+.navbar .container .navbar-nav .nav-item .nav-link:hover:after{
+    width: 80%; 
+}
+
+@media (max-width: 480px) { 
+
+    .services .card-body:hover .fa-stack{
+        background-color: #09c;
+        border-radius:100%;
+        width: 30% !important;
+        color: white;
+    }
+
+    .bottom{
+        margin-left: 20% !important;
+    }
+
+}
+
+
+
+@media (max-width:650px) {
+    
+    .my-container-fluid .navbar .bg-myNav{
+        padding-left: 0;
+        position: static;
+    }
+
+    .AboutImg{
+        margin-right: 1% !important;
+    }
+
+    .office-image{ 
+        min-height: 140vh;
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;   
+        }
+        .card-item .i{
+            display: block; 
+        }
+        .card-item {
+            width: 50px;
+            margin-top: -20px;
+        }
+        .card-item span .h6{
+          margin-left: 20px;
+        }
+    }
+
+    .card-inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .card-inner.inner{
+        margin-left: 20px;
+    }
+    
+    .services .card-body:hover .fa-stack{
+        background-color: #09c;
+       border-radius:100%;
+       width: 24%;
+       color: white;
+    }
+
+    .scroll{
+        min-height: 80vh;
+    }
+
+    .scroll .img{
+        margin-left: -70px;
+    }
+
+    .send-get-in-tech{
+        height: 190vh;
+    }
+    .get{
+    margin-bottom: 20px;
+    }
+
+}
